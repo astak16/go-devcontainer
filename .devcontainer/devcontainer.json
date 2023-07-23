@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
+{
+	"name": "go",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bookworm",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"runArgs": [
+		// "--privileged",
+		// "--privileged",
+		// "--dns=114.114.114.114", // 如果你用的是长城宽带，在遇到网络不通的时候，可以删掉这一行
+		"--network=network1"
+	],
+	"workspaceFolder": "/root/uccs",
+	"remoteUser": "root",
+	"shutdownAction": "stopContainer",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.Go",
+				"GitHub.copilot",
+				"zxh404.vscode-proto3"
+			]
+		}
+	}
+}

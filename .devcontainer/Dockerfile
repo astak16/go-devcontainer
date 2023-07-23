@@ -1,0 +1,1 @@
+FROM astak16/go:1.0.0
