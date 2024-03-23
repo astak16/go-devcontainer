@@ -1,1 +1,1 @@
-FROM astak16/go:1.0.2
+FROM astak16/go:1.0.3
